@@ -6,4 +6,5 @@ import user_service.user_service.entity.UserEntity;
 
 @Repository
 public interface UserEntityRepository extends JpaRepository<UserEntity, String> {
+    Boolean findByEmail(String email);
 }
